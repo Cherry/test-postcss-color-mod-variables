@@ -1,0 +1,21 @@
+{
+  "name": "test-postcss-color-mod-variables",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-withVariablesConfig": "gulp withVariablesConfig",
+    "build-withRoot": "gulp withRoot"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-postcss": "7.0.1",
+    "postcss": "6.0.23",
+    "postcss-preset-env": "5.2.1"
+  }
+}
