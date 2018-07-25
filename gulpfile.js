@@ -2,11 +2,22 @@ const gulp = require('gulp'),
 	postcss = require('gulp-postcss'),
 	postcssPresetEnv = require('postcss-preset-env');
 
-gulp.task('withVariablesConfig', () => gulp.src('./src/test-withVariablesConfig.css').pipe(
+gulp.task('colorModBrowsers', () => gulp.src('./src/test-withBrowsers.css').pipe(
 	postcss([
 		postcssPresetEnv({
-			variables: {
-				black: '#000000'
+			browsers: 'last 3 chrome versions',
+			stage: 0,
+			features: {
+				'color-mod-function': {
+					unresolved: 'ignore'
+				},
+				'custom-properties': {
+					variables: {
+						black: '#000000',
+						green: '#00ff00'
+					},
+					noValueNotifications: "error"
+				}
 			}
 		})
 	])
@@ -14,11 +25,21 @@ gulp.task('withVariablesConfig', () => gulp.src('./src/test-withVariablesConfig.
 	gulp.dest('./dist/')
 ));
 
-gulp.task('withRoot', () => gulp.src('./src/test-withRoot.css').pipe(
+gulp.task('colorMod', () => gulp.src('./src/test.css').pipe(
 	postcss([
 		postcssPresetEnv({
-			variables: {
-				black: '#000000'
+			stage: 0,
+			features: {
+				'color-mod-function': {
+					unresolved: 'ignore'
+				},
+				'custom-properties': {
+					variables: {
+						black: '#000000',
+						green: '#00ff00'
+					},
+					noValueNotifications: "error"
+				}
 			}
 		})
 	])

@@ -1,0 +1,6 @@
+body {
+	background-color: rgba(0, 0, 0, 0.2);
+	background-color: color-mod(var(--black) alpha(20%));
+	border: hsl(120, 100%, 40%);
+	border: color-mod(var(--green) lightness(40%));;
+}

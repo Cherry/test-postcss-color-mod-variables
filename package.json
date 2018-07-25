@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-withVariablesConfig": "gulp withVariablesConfig",
-    "build-withRoot": "gulp withRoot"
+    "build-colorModBrowsers": "gulp colorModBrowsers",
+    "build-colorMod": "gulp colorMod"
   },
   "keywords": [],
   "author": "",

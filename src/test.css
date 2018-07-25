@@ -1,0 +1,4 @@
+body {
+	background-color: color-mod(var(--black) alpha(20%));
+	border: color-mod(var(--green) lightness(40%));;
+}
